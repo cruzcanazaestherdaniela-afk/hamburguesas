@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGER WEEK LA PAZ</title>
+    <link rel="stylesheet" href="css/css.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffffff, #e0ffff); 
+            color: #111;
+            line-height: 1.6;
+            text-align: left; 
+        }
+
+        header {
+            background-color: #000; 
+            color: #fff;
+            padding: 20px 0;
+            text-align: center; 
+        }
+
+        header img {
+            width: 100px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #40E0D0; /* Turquesa */
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #40E0D0;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .section-content {
+            padding: 40px 20px;
+        }
+
+        .section-content h2 {
+            color: #000;
+            border-bottom: 3px solid #40E0D0;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .section-content h3 {
+            color: #40E0D0; 
+            margin-top: 30px;
+        }
+
+        .section-content p {
+            text-align: left;
+            max-width: 800px;
+            margin: 10px 0;
+        }
+
+        .destacado {
+            background: #40E0D0;
+            color: #000;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .section-content img {
+            display: block;
+            margin: 15px auto; 
+            max-width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer p:first-child {
+            color: #40E0D0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Burger Week">
+        <h1>¡BIENVENIDOS A BURGER WEEK LA PAZ!</h1>
+        <nav>
+            <a href="#men">MENÚ</a>
+            <a href="#com">COMBOS</a>
+            <a href="#inf">INFORMACIONES</a>
+        </nav>
+    </header>
+
+    <section id="men" class="section-content">
+        <h2>MENÚ</h2>
+        <h3>PAISA RIBS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus obcaecati possimus praesentium itaque
+        autem temporibus libero iste ea cumque saepe omnis consequatur, vel quae odit sint minima, ullam maxime quia!</p>
+        <img src="img/paisa.jpeg" alt="Paisa Ribs">
+
+        <h3>HOLY BURGER</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quas vel cum dolorum praesentium harum 
+        nemo aut doloribus sapiente. Fuga atque itaque laudantium quo earum laborum sunt dolorem fugiat tempora.</p>
+        <img src="img/holy.jpeg" alt="Holy Burger">
+
+        <h3>VIKINGS CHEESE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quas vel cum dolorum praesentium harum nemo aut doloribus sapiente. Fuga atque itaque laudantium quo earum laborum sunt dolorem fugiat tempora.</p>
+        <img src="img/viking.jpeg" alt="Vikings Cheese">
+
+        <h3>LA MERENGUE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quas vel cum dolorum praesentium harum nemo aut doloribus sapiente. Fuga atque itaque laudantium quo earum laborum sunt dolorem fugiat tempora.</p>
+        <img src="img/mere.jpeg" alt="La Merengue">
+    </section>
+
+    <section id="com" class="section-content">
+        <h2>COMBOS</h2>
+        <h3>THE BEAST BACON</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quas vel cum dolorum praesentium harum nemo aut doloribus sapiente. Fuga atque itaque laudantium quo earum laborum sunt dolorem fugiat tempora.</p>
+        <img src="img/bacon.jpeg" alt="Beast Bacon">
+
+        <h3>PANZA CRUNCH</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque quas vel cum dolorum praesentium harum nemo aut doloribus sapiente. Fuga atque itaque laudantium quo earum laborum sunt dolorem fugiat tempora.</p>
+        <img src="img/crunch.jpeg" alt="Panza Crunch">
+    </section>
+
+    <section id="inf" class="section-content">
+        <h2>INFORMACIONES</h2>
+        <p><strong>Promoción:</strong>COMBOS 2X1</p>
+        <p><strong>Días de atención:</strong> LUNES A SÁBADO</p>
+        <p><strong>Horarios:</strong> 11:00 a.m - 20:00 p.m </p>
+        <p><strong>Lugar:</strong> Hamburguesería BURGER WEEK LA PAZ, Calacoto calle 15, Ciudad de La Paz</p>
+    </section>
+
+    <footer>
+        <p>© 2025 BURGER WEEK LA PAZ - ¡Gracias por visitarnos!</p>
+        <p>Burgerweek@gmail.com</p>
+    </footer>
+</body>
+</html>
